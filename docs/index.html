@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Artiverse">
+  <meta name="description" content="Artiverse: A Diverse and Physically Grounded Dataset for Articulated Objects">
+  <meta name="keywords" content="Artiverse, articulated objects, 3D dataset, articulation, physically grounded">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Artiverse</title>
+  <title>Artiverse: A Diverse and Physically Grounded Dataset for Articulated Objects</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 </head>
 
 <body>
+
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Artiverse</h1>
+            <h1 class="title is-1 publication-title">Artiverse: A Diverse and Physically Grounded Dataset for
+              Articulated Objects</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Articulated 3D objects</span>
+              <span class="author-block">
+                <a href="https://diliash.github.io">Denys Iliash</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://sevenljy.github.io/">Jiayi Liu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Egor Fokin<sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://qiruiw.github.io/">Qirui Wu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.sfu.ca/~amahdavi/">Ali Mahdavi-Amiri</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://msavva.github.io/">Manolis Savva</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://angelxuanchang.github.io">Angel X. Chang</a><sup>1,2</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup> Simon Fraser University, <sup>2</sup> Canada-CIFAR AI Chair,
+                Amii</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block" style="color:rgb(43, 92, 113)">CVPR, 2026</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/3dlg-hcvc/artiverse"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="visuals/hf-logo-pirate.png" alt="Hugging Face Icon">
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -28,25 +70,212 @@
     </div>
   </section>
 
+
   <section class="section">
     <div class="container is-max-desktop">
-      <div class="content has-text-centered has-text-grey">
-        <p>Coming soon.</p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="crop_grey_line">
+            <video autoplay playsinline muted loop>
+              <source src="./visuals/arti_examples_cropped.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-centered">
+          <div class="content has-text-justified">
+            <p>
+              We present <b>Artiverse</b>, a diverse and physically grounded dataset of high-quality articulated 3D
+              objects designed for realistic functional modeling and simulation.
+            </p>
+            <p>
+              Artiverse contains <b>5.4K</b> human-authored objects across a broad range of <b>88 categories</b>,
+              aggregated from multiple 3D static repositories.
+              Objects are annotated with functional parts, interior structures, realistic kinematic relationships and
+              articulated joints including multi-DoF joints, and physical attributes such as metric scale, material, and
+              mass.
+            </p>
+            <p>
+              We develop a <b>semi-automated annotation pipeline</b> that combines few-shot segmentation, geometric
+              reasoning, vision-language model inference, and multi-stage human verification to achieve high-quality and
+              efficient annotation, reducing manual annotation time by over 30%.
+            </p>
+            <p>
+              We demonstrate the value of Artiverse on tasks of part mobility analysis, articulated object generation,
+              and physics-based interaction.
+              Artiverse provides a data resource to advance functional understanding for articulated objects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <div class="center-container">
+              <h3 class="title is-3">Motivation</h3>
+              <img src="./visuals/motivation.png" class="interpolation-image" alt="Motivation figure.">
+            </div>
+            <p>
+              The large existing datasets of articulated objects suffer from low diversity and realism. While more
+              physically grounded alternatives exist, their scale and diversity are low. To this end, we propose
+              Artiverse &mdash; a physically grounded and diverse dataset of articulated objects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <div class="center-container">
+              <h3 class="title is-3">Representation</h3>
+              <img src="./visuals/hierarchical_segmentation.png" class="interpolation-image interpolation-image-shrink-33" alt="Hierarchical segmentation figure.">
+            </div>
+            <p>
+              Artiverse offers a richer representation compared to prior articulated object datasets. For instance, our
+              segmentation is hierarchical, with articulated parts consisting of affordance parts where applicable. The
+              affordance parts are non-articulated parts that are valuable for human-object interaction, such as a handle
+              of the lever and shelves in the body of the cabinet.
+            </p>
+            <div class="center-container">
+              <img src="./visuals/representation.png" class="interpolation-image" alt="Representation figure.">
+            </div>
+            <p>
+              Moreover, we provide physical part attributes such as materials and masses. Finally, we extend motion types
+              beyond common 2 DoF ones, as can be seen below.
+            </p>
+            <div class="center-container">
+              <div class="crop_grey_line">
+                <video autoplay playsinline muted loop>
+                  <source src="./visuals/motion_representation_cropped.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <div class="center-container">
+              <h3 class="title is-3">Pipeline</h3>
+              <img src="./visuals/pipeline.png" class="interpolation-image" alt="Annotation pipeline figure.">
+            </div>
+            <p>
+              In order to enable scalable data annotation, we introduce a semi-automated pipeline. The initial proposals
+              for the annotations are produced by various models and heuristics, while humans come in to check and
+              correct the automated proposals.
+            </p>
+            <p>
+              The pipeline consists of 4 modules. The first module is <b>segmentation</b>, where we leverage a few-shot
+              image-based model that outputs segmentation over multiview images, then we employ a topology-aware
+              segmentation propagation heuristic, mapping it to meshes. The next module outputs <b>motion
+                proposals</b>, obtained via generalizable geometric heuristics leveraging descriptors like bounding boxes
+              and areas of contact. The next step is <b>interior completion</b>, where we address the cases of
+              completing existing articulated parts (i.e., drawers), adding missing articulated parts (i.e., microwave
+              turntables) and affordance parts (i.e., shelves). Finally, we leverage heuristics to infer <b>material,
+                volume and mass</b> attributes per part.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <div class="center-container">
+              <h3 class="title is-3">Results</h3>
+              <img src="./visuals/arti_quant_combo.png" class="interpolation-image" alt="Quantitative results figure.">
+            </div>
+            <p>
+              We find that Artiverse improves generalization on articulated object understanding tasks such as part
+              segmentation and motion inference. Moreover, it serves as a challenging benchmark in articulated part
+              generation, where we benchmark SINGAPO and Articulate Anything.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="Acknowledgements">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <h2 class="title is-3">Acknowledgements</h2>
+            <p>
+              This work was funded in part by a CIFAR AI Chair, a Canada Research Chair, and NSERC Discovery grants, and
+              supported by the Digital Research Alliance of Canada. We thank our annotators for their dedication in
+              ensuring the data quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{iliash2026artiverse,
+  title={Artiverse: A Diverse and Physically Grounded Dataset for Articulated Objects},
+  author={Iliash, Denys and Liu, Jiayi and Fokin, Egor and Wu, Qirui and Mahdavi-Amiri, Ali and Savva, Manolis and Chang, Angel X.},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2026}
+}</code></pre>
+    </div>
+  </section>
+
+
   <footer class="footer">
     <div class="container">
-      <div class="content has-text-centered">
-        <p>
-          This website is licensed under a <a rel="license"
-            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-        </p>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+              The template is borrowed from <a href="https://nerfies.github.io/">Nerfies</a>.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>
