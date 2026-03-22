@@ -125,14 +125,38 @@ h4 {
   border-radius: 5px;
 }
 
-.crop_grey_line {
-  height: auto;
-}
-
-.crop_grey_line video {
+.crop_grey_line_1 {
   width: 100%;
+  aspect-ratio: 16 / 6;
+  overflow: hidden;
   border-radius: 5px;
 }
+
+.crop_grey_line_1 video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.crop_grey_line_2 {
+  width: 100%;
+  aspect-ratio: 16 / 5.65;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.crop_grey_line_2 video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+}
+
 
 .interpolation-image {
   width: 100%;
@@ -144,6 +168,14 @@ h4 {
 .interpolation-image-shrink-33 {
   width: 50%;
   max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.distribution-image {
+  width: 80%;
+  max-width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;

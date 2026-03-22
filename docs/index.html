@@ -47,12 +47,23 @@
                 Amii</span>
             </div>
 
-            <div class="is-size-5 publication-authors">
+            <div class="is-size-4 publication-authors">
               <span class="author-block" style="color:rgb(43, 92, 113)">CVPR, 2026</span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (coming soon) </span>
+                </a>
+              </span>
+                <!-- Data Link. -->
                 <span class="link-block">
                   <a href="https://huggingface.co/datasets/3dlg-hcvc/artiverse"
                     class="external-link button is-normal is-rounded is-dark">
@@ -60,6 +71,16 @@
                       <img src="visuals/hf-logo-pirate.png" alt="Hugging Face Icon">
                     </span>
                     <span>Data</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/3dlg-hcvc/singapo"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (coming soon) </span>
                   </a>
                 </span>
               </div>
@@ -74,8 +95,8 @@
   <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="crop_grey_line">
+        <div class="column is-full">
+          <div class="crop_grey_line_1">
             <video autoplay playsinline muted loop>
               <source src="./visuals/arti_examples_cropped.mp4" type="video/mp4">
             </video>
@@ -147,28 +168,71 @@
           <div class="content has-text-justified">
             <div class="center-container">
               <h3 class="title is-3">Representation</h3>
-              <img src="./visuals/hierarchical_segmentation.png" class="interpolation-image interpolation-image-shrink-33" alt="Hierarchical segmentation figure.">
             </div>
             <p>
-              Artiverse offers a richer representation compared to prior articulated object datasets. For instance, our
-              segmentation is hierarchical, with articulated parts consisting of affordance parts where applicable. The
-              affordance parts are non-articulated parts that are valuable for human-object interaction, such as a handle
-              of the lever and shelves in the body of the cabinet.
+              Our data is richly annotated with functional parts, motion joints up to 3-DoF for articulation, kinematic tree, and physical properties including metric scale, per-part material, and mass.
+              Artiverse offers a richer representation compared to prior articulated object datasets.
             </p>
             <div class="center-container">
               <img src="./visuals/representation.png" class="interpolation-image" alt="Representation figure.">
             </div>
-            <p>
-              Moreover, we provide physical part attributes such as materials and masses. Finally, we extend motion types
-              beyond common 2 DoF ones, as can be seen below.
-            </p>
-            <div class="center-container">
-              <div class="crop_grey_line">
-                <video autoplay playsinline muted loop>
-                  <source src="./visuals/motion_representation_cropped.mp4" type="video/mp4">
-                </video>
+            <div>
+              <h4> Hierarchical Segmentation </h4> 
+              <p>
+                Our functional segmentation is hierarchical, with articulated parts consisting of affordance parts where applicable. The
+                affordance parts are non-articulated parts that are valuable for human-object interaction, such as a handle
+                of the lever and shelves in the body of the cabinet.
+              </p>
+              <div class="center-container">
+                <img src="./visuals/hierarchical_segmentation.png" class="interpolation-image interpolation-image-shrink-33" alt="Hierarchical segmentation figure.">
               </div>
             </div>
+            <div>
+              <h4> Complex Motion Types </h4> 
+              <p>
+                For motion joint, we extend motion types beyond common 1-DoF ones, some examples are shown below.
+              </p>
+              <div class="center-container">
+                <div class="crop_grey_line_2">
+                  <video autoplay playsinline muted loop>
+                    <source src="./visuals/motion_representation_cropped.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4> Interior Completion </h4> 
+              <p>
+                Many existing static 3D assets are lack of interior structures to enable realistic simulation and complete functionality.
+                We managed to complete the missing geometric structures (including both articulated and affordance-oriented structure). Some examples are shown here.
+              </p>
+              <div class="center-container">
+                <img src="./visuals/interior_completion.png" alt="Hierarchical segmentation figure." width="80%">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <div class="center-container">
+              <h3 class="title is-3">Statistics</h3>
+            </div>
+            <div class="center-container">
+              <img src="./visuals/distribution.png" class="interpolation-image distribution-image" alt="Stats figure.">
+            </div>
+            <p>
+              (Left) Our data is diversely sourced from 10 static 3D datasets, carefully filtered and organized into 88 categories. 
+              (Right) The distribution of motion joint types highlights the presence of common 1-DoF and complex multi-DoF joints (e.g., universal), reflecting motion diversity.
+            </p>
           </div>
         </div>
       </div>
@@ -182,7 +246,7 @@
         <div class="column is-full-width">
           <div class="content has-text-justified">
             <div class="center-container">
-              <h3 class="title is-3">Pipeline</h3>
+              <h3 class="title is-3">Annotation Pipeline: Semi-automated</h3>
               <img src="./visuals/pipeline.png" class="interpolation-image" alt="Annotation pipeline figure.">
             </div>
             <p>
@@ -207,7 +271,7 @@
   </section>
 
 
-  <section class="section">
+  <!-- <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-full-width">
@@ -225,7 +289,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <section class="section" id="Acknowledgements">
