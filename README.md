@@ -42,7 +42,7 @@ git submodule update --init --recursive
 Visualize a processed mesh from the dataset and write outputs (e.g., renders/videos) under `output/`:
 
 ```bash
-python view_model.py --model_path artiverse_data/meshes_processed/desk/fpModel/ea4826625a4ad17e2bd2f4013acdb1c26b568999 --output_dir output
+python view_model.py --model_path data/desk/fpModel/ea4826625a4ad17e2bd2f4013acdb1c26b568999 --output_dir output
 ```
 
 ## Acknowledgements
