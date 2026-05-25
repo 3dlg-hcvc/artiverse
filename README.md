@@ -10,15 +10,13 @@
 
 <sup>1</sup>Simon Fraser University, <sup>2</sup>Canada-CIFAR AI Chair, Amii
 
-### [Project Page](https://3dlg-hcvc.github.io/artiverse/)
-
-The dataset is released on [Hugging Face](https://huggingface.co/datasets/3dlg-hcvc/artiverse).
+### [Project Page](https://3dlg-hcvc.github.io/artiverse/) | [Dataset](https://huggingface.co/datasets/3dlg-hcvc/artiverse)
 
 We present **Artiverse**, a diverse and physically grounded dataset of high-quality articulated 3D objects designed for realistic functional modeling and simulation.
 
 Artiverse contains **5.4K** human-authored objects across **88 categories**, aggregated from multiple 3D static repositories. Objects are annotated with functional parts, interior structures, realistic kinematic relationships and articulated joints (including multi-DoF joints), and physical attributes such as metric scale, material, and mass.
 
-<img src="docs/visuals/motivation.png" alt="Motivation"/>
+<img src="docs/visuals/teaser_v3.png" alt="Artiverse teaser"/>
 
 ## Data
 
@@ -31,29 +29,15 @@ git lfs install
 git clone https://huggingface.co/datasets/3dlg-hcvc/artiverse
 ```
 
-## Usage Examples
-
-Make sure you initialized the submodules using:
-
-```bash
-git submodule update --init --recursive
-```
-
-Visualize a processed mesh from the dataset and write outputs (e.g., renders/videos) under `output/`:
-
-```bash
-python view_model.py --model_path data/desk/fpModel/ea4826625a4ad17e2bd2f4013acdb1c26b568999 --output_dir output
-```
-
-## Acknowledgements
-
-This work was funded in part by a CIFAR AI Chair, a Canada Research Chair, and NSERC Discovery grants, and supported by the Digital Research Alliance of Canada. We thank our annotators for their dedication in ensuring the data quality.
-
 ## TODO
 
 - [ ] Release data.
 - [ ] Deploy data viewer.
 - [ ] Release pipeline code.
+
+## Acknowledgements
+
+This work was funded in part by a CIFAR AI Chair, a Canada Research Chair, and NSERC Discovery grants, and supported by the Digital Research Alliance of Canada. We thank our annotators for their dedication in ensuring the data quality.
 
 ## Citation
 
