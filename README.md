@@ -14,6 +14,12 @@
 
 The dataset is released on [Hugging Face](https://huggingface.co/datasets/3dlg-hcvc/artiverse).
 
+## TODO
+
+- Release data.
+- Deploy data viewer.
+- Release pipeline code.
+
 We present **Artiverse**, a diverse and physically grounded dataset of high-quality articulated 3D objects designed for realistic functional modeling and simulation.
 
 Artiverse contains **5.4K** human-authored objects across **88 categories**, aggregated from multiple 3D static repositories. Objects are annotated with functional parts, interior structures, realistic kinematic relationships and articulated joints (including multi-DoF joints), and physical attributes such as metric scale, material, and mass.
