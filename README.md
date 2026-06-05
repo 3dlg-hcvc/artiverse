@@ -10,7 +10,7 @@
 
 <sup>1</sup>Simon Fraser University, <sup>2</sup>Canada-CIFAR AI Chair, Amii
 
-### [Project Page](https://3dlg-hcvc.github.io/artiverse/) | [Dataset](https://huggingface.co/datasets/3dlg-hcvc/artiverse)
+### [Project Page](https://3dlg-hcvc.github.io/artiverse/) | [Dataset](https://huggingface.co/datasets/3dlg-hcvc/artiverse) | [Data Viewer] (https://aspis.cmpt.sfu.ca/artiverse_viewer/#/)
 
 We present **Artiverse**, a diverse and physically grounded dataset of high-quality articulated 3D objects designed for realistic functional modeling and simulation.
 
@@ -31,8 +31,10 @@ git clone https://huggingface.co/datasets/3dlg-hcvc/artiverse
 
 ## TODO
 
-- [ ] Release data.
-- [ ] Deploy data viewer.
+- [3.5k/5.4k] Release data.
+- [] Release cleanup pass.
+- [] Release functional USD.
+- [X] Deploy data viewer.
 - [ ] Release pipeline code.
 
 ## Acknowledgements
