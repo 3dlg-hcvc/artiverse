@@ -10,7 +10,7 @@
 
 <sup>1</sup>Simon Fraser University, <sup>2</sup>Canada-CIFAR AI Chair, Amii
 
-### [Project Page](https://3dlg-hcvc.github.io/artiverse/) | [Dataset](https://huggingface.co/datasets/3dlg-hcvc/artiverse) | [Data Viewer] (https://aspis.cmpt.sfu.ca/artiverse_viewer/#/)
+### [Project Page](https://3dlg-hcvc.github.io/artiverse/) | [Dataset](https://huggingface.co/datasets/3dlg-hcvc/artiverse) | [Data Viewer](https://aspis.cmpt.sfu.ca/artiverse_viewer/#/)
 
 We present **Artiverse**, a diverse and physically grounded dataset of high-quality articulated 3D objects designed for realistic functional modeling and simulation.
 
