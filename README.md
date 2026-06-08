@@ -31,9 +31,9 @@ git clone https://huggingface.co/datasets/3dlg-hcvc/artiverse
 
 ## TODO
 
-- [3.5k/5.4k] Release data.
-- [] Release cleanup pass.
-- [] Release functional USD.
+- [ ] [3.5k/5.4k] Release data.
+- [ ] Release cleanup pass.
+- [ ] Release functional USD.
 - [X] Deploy data viewer.
 - [ ] Release pipeline code.
 
